@@ -1,12 +1,3 @@
-<?php
-require "common.php";
-
-if ($set['autokeywords'] == 1) {
-	$word = get_word();
-} else {
-	$word = "迪迦奥特曼";
-}
-?>
 <!DOCTYPE html>
 <html lang="zh-CN">
  <head> 
@@ -24,8 +15,8 @@ if ($set['autokeywords'] == 1) {
   <!--QQ强制全屏--> 
   <meta name="x5-page-mode" content="app" />
   <!--QQ应用模式--> 
-  <title>闲渡搜索 - Xiandu.Me</title> 
-  <meta name="keywords" content="闲渡导航,闲渡搜索,闲渡搜索导航,闲渡,闲渡工具,闲渡短网址,闲渡图床,闲渡在线ps,闲渡图床工具,闲渡音乐">
+  <title>个人导航</title>
+  <meta name="keywords" content="个人导航">
   <meta name="description" content="可能是最简洁的搜索导航，给你简单舒爽的搜索体验。">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
   <link href="css/style.css" rel="stylesheet" /> 
@@ -42,20 +33,16 @@ if ($set['autokeywords'] == 1) {
   <div class="list closed"> 
    <ul>
     <li class="title"><i class="iconfont icon-changyong"></i> 常用</li> 
-    <li><a rel="nofollow" href="http://music.xiandu.me/" target="_blank"><i class="iconfont icon-kologom" style="color: #f03;"></i>音乐下载</a></li> 
-    <li><a rel="nofollow" href="http://tu.xiandu.me/" target="_blank"><i class="iconfont icon-tupian" style="color: #f90;"></i>闲渡图床</a></li> 
-    <li><a rel="nofollow" href="http://ps.xiandu.me/" target="_blank"><i class="iconfont icon-p" style="color: #fff;"></i>在线ps</a></li> 
-    <li><a rel="nofollow" href="http://t.xiandu.me/" target="_blank"><i class="iconfont icon-Qyouhuiquan" style="color: #2196f3;"></i>淘宝优惠券</a></li> 
-    <li><a rel="nofollow" href="http://dwz.xiandu.me/" target="_blank"><i class="iconfont icon-fuzhilianjiexian-" style="color: #f05;"></i>短网址生成</a></li>
-    <!----> 
+    <li><a rel="nofollow" href="http://192.168.123.90:6080/" target="_blank"><i class="iconfont icon-yunpan" style="color: #2196f3;"></i>内网导航</a></li>
+    <li><a rel="nofollow" href="https://hjhai.cn" target="_blank"><i class="iconfont icon-kologom" style="color: #f03;"></i>博客</a></li>
+    <li><a rel="nofollow" href="https://wiki.hjhai.cn/dokuwiki/doku.php?id=start&do=index" target="_blank"><i class="iconfont icon-tupian" style="color: #f90;"></i>wiki</a></li>
+	<!---->
+    
     <li class="title"><i class="iconfont icon-youxiang"></i> 邮箱</li> 
-    <li><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="iconfont icon-gmail" style="color: #f03;"></i>Gmail</a></li> 
-    <li><a rel="nofollow" href="https://outlook.live.com/mail/" target="_blank"><i class="iconfont icon-windows" style="color: #059;"></i>Hotmail</a></li> 
     <li><a rel="nofollow" href="https://mail.163.com/" target="_blank"><i class="iconfont icon-wangyi" style="color: #169;"></i>网易邮箱</a></li> 
-    <li><a rel="nofollow" href="https://mail.sina.com.cn/" target="_blank"><i class="iconfont icon-xinlang" style="color: #e6162d;"></i>新浪邮箱</a></li> 
     <li><a rel="nofollow" href="https://mail.qq.com/" target="_blank"><i class="iconfont icon-QQ" style="color: #f05;"></i>QQ邮箱</a></li> 
-    <li><a rel="nofollow" href="https://qiye.aliyun.com/" target="_blank"><i class="iconfont icon-yunyouxiang" style="color: #f15534;"></i>阿里邮箱</a></li> 
     <!----> 
+    
     <li class="title"><i class="iconfont icon-msg"></i> 论坛、社交</li> 
     <li><a rel="nofollow" href="https://www.52pojie.cn/" target="_blank"><i class="iconfont icon-wuaipojie" style="color: #fff;"></i>吾爱破解</a></li>
     <li><a rel="nofollow" href="https://www.csdn.net/" target="_blank"><i class="iconfont icon-csdn" style="color: #f03;"></i>CSDN</a></li> 
@@ -66,8 +53,9 @@ if ($set['autokeywords'] == 1) {
     <li><a rel="nofollow" href="https://www.instagram.com" target="_blank"><i class="iconfont icon-instagram" style="color: #93009f;"></i>Instagram</a></li> 
     <li><a rel="nofollow" href="https://www.twitter.com" target="_blank"><i class="iconfont icon-twitter" style="color: #00bcff;"></i>Twitter</a></li> 
     <li><a rel="nofollow" href="https://www.facebook.com" target="_blank"><i class="iconfont icon-facebook" style="color: #4267b2;"></i>Facebook</a></li> 
+    
     <!----> 
-    <li class="title"><i class="iconfont icon-shipin"></i> 视频媒体</li> 
+    <li class="title"><i class="iconfont icon-shipin"></i> 视频</li> 
     <li><a rel="nofollow" href="https://www.youtube.com/" target="_blank"><i class="iconfont icon-youtube" style="color:#f03;"></i>Youtube</a></li> 
     <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li> 
     <li><a rel="nofollow" href="https://www.youku.com/" target="_blank"><i class="iconfont icon-youku" style="color:#09e;"></i>优酷</a></li> 
@@ -120,63 +108,14 @@ if ($set['autokeywords'] == 1) {
     <div class="s-type">
      <span></span>
      <div class="s-type-list animated fadeInUp">
-      <label for="type-baidu">常用</label>
       <label for="type-search">搜索</label>
-      <label for="type-br">工具</label>
-      <label for="type-zhihu">社区</label>
-      <label for="type-taobao1">生活</label>
      </div>
-    </div>
-    <div class="search-group group-a">
-     <span class="type-text">常用</span>
-     <ul class="search-type">
-      <li><input onclick="bw()" checked="" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下" /><label for="type-baidu"><span>百度</span></label></li>
-      <li><input onclick="bq()" hidden="" type="radio" name="type" id="yyss" value="https://www.xiandu.me/" data-placeholder="影视搜索" /><label for="yyss"><span>影视</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-taobao" value="http://music.xiandu.me/?type=netease&amp;name=" data-placeholder="音乐搜索下载" /><label for="type-taobao"><span>音乐</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-bing1" value="http://t.xiandu.me/index.php?input=2&amp;r=l&amp;kw=" data-placeholder="淘宝优惠券" /><label for="type-bing1"><span>优惠券</span></label></li>
-     </ul>
     </div>
     <div class="search-group group-b">
      <span class="type-text">搜索</span>
      <ul class="search-type">
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-search" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下" /><label for="type-search"><span>百度</span></label></li>
       <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-google" value="https://www.google.com/search?q=" data-placeholder="谷歌两下" /><label for="type-google"><span>Google</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-360" value="https://www.so.com/s?q=" data-placeholder="360好搜" /><label for="type-360"><span>360</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-sogo" value="https://www.sogou.com/web?query=" data-placeholder="搜狗搜索" /><label for="type-sogo"><span>搜狗</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-bing" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索" /><label for="type-bing"><span>Bing</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-sm" value="https://yz.m.sm.cn/s?q=" data-placeholder="UC移动端搜索" /><label for="type-sm"><span>神马</span></label></li>
-     </ul>
-    </div>
-    <div class="search-group group-c">
-     <span class="type-text">工具</span>
-     <ul class="search-type">
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-br" value="http://rank.chinaz.com/all/" data-placeholder="请输入网址(不带http://)" /><label for="type-br"><span>权重查询</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-links" value="http://link.chinaz.com/" data-placeholder="请输入网址(不带http://)" /><label for="type-links"><span>友链检测</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-icp" value="https://icp.aizhan.com/" data-placeholder="请输入网址(不带http://)" /><label for="type-icp"><span>备案查询</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-ping" value="http://ping.chinaz.com/" data-placeholder="请输入网址(不带http://)" /><label for="type-ping"><span>PING检测</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-404" value="http://tool.chinaz.com/Links/?DAddress=" data-placeholder="请输入网址(不带http://)" /><label for="type-404"><span>死链检测</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-ciku" value="http://www.ciku5.com/s?wd=" data-placeholder="请输入关键词" /><label for="type-ciku"><span>关键词挖掘</span></label></li>
-     </ul>
-    </div>
-    <div class="search-group group-d">
-     <span class="type-text">社区</span>
-     <ul class="search-type">
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&amp;q=" data-placeholder="知乎" /><label for="type-zhihu"><span>知乎</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-wechat" value="http://weixin.sogou.com/weixin?type=2&amp;query=" data-placeholder="微信" /><label for="type-wechat"><span>微信</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/" data-placeholder="微博" /><label for="type-weibo"><span>微博</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q=" data-placeholder="豆瓣" /><label for="type-douban"><span>豆瓣</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-why" value="https://ask.seowhy.com/search/?q=" data-placeholder="SEO问答社区" /><label for="type-why"><span>搜外问答</span></label></li>
-     </ul>
-    </div>
-    <div class="search-group group-e">
-     <span class="type-text">生活</span>
-     <ul class="search-type">
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-taobao1" value="http://t.xiandu.me/index.php?input=2&amp;r=l&amp;kw=" data-placeholder="淘宝优惠券" /><label for="type-taobao1"><span>优惠券</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-快递100" value="http://www.kuaidi100.com/?" data-placeholder="快递100" /><label for="type-快递100"><span>快递100</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-xiachufang" value="http://www.xiachufang.com/search/?keyword=" data-placeholder="下厨房" /><label for="type-xiachufang"><span>下厨房</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-xiangha" value="https://www.xiangha.com/so/?q=caipu&amp;s=" data-placeholder="香哈菜谱" /><label for="type-xiangha"><span>香哈菜谱</span></label></li>
-      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-12306" value="http://www.12306.cn/?" data-placeholder="12306" /><label for="type-12306"><span>12306</span></label></li>
-      <li> <input onclick="bw()" hidden="" type="radio" name="type" id="type-qunar" value="https://www.qunar.com/?" data-placeholder="去哪儿" /><label for="type-qunar"><span>去哪儿</span></label></li>
+      <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-search" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下" /><label for="type-search"><span>百度</span></label></li>
      </ul>
     </div>
    </div>
@@ -198,11 +137,5 @@ if ($set['autokeywords'] == 1) {
   <script type="text/javascript" src="js/sousuo.js"></script> 
   <script type="text/javascript" src="js/lianxiang.js"></script> 
   <div class="bgo"></div> 
-  <img class="logo" src="http://xiandus.gitee.io/xd/logo.svg" />  
  </body>
 </html>
-<!--
-网址：https://xiandu.me
-github：https://github.com/xiandus/search
-                XianDu，2020.1.6
--->
